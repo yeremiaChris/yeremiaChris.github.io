@@ -1,67 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Porfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Required meta tags -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Fjalla+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Porfolio</title>
 </head>
+
 <body>
-    <div class="container">
-        <div>
-            <img class="gambar" src="./gambar/jere.JPG" alt="">
-            <h1>Yeremia Chris Saragi</h1>
-            <p class="webDev">Web and Mobile Developer</p>
-            <div class="sosmed">
-                <a target="_blank" href="https://github.com/yeremiaChris"><img class="icon" src="./gambar/github.png" alt=""></a>
-                <a target="_blank" href="https://www.facebook.com/yeremiaawesome/"><img class="icon" src="./gambar/facebook.png" alt=""></a>
-                <a target="_blank" href="https://wa.me/6281388110474"><img class="icon" src="./gambar/whatsapp.png" alt=""></a> 
+
+    <!-- navbar -->
+    <nav  class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div id="home" class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools">Tools </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Project</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="isi">
-            <h2>About Me</h2>
-            <p class="keterangan">Hello, my name is Yeremia Chris Saragi. I love programming and music. I like to learn something new. I'm a student at Aki University Semarang Indonesia majoring Information System.</p>
-        </div>
-        <div class="tools">
-            <h2>Tools</h2>
-            <img class="toolIcon" src="./gambar/New Project.png" alt="">   
-        </div>
-        <div class="tools">
-            <h2>Projects</h2>
-            <div>
-                <ul>
-                    <li>
-                        <h3>Restaurant App</h3>
-                    </li>
-                    <p class="keterangan">Built with react native and firebase, managing transaction and show income report per day,per
-                week, per month, and per year .</p>
-                </ul>
-                <div class="toolsImage">
-                    <img class="img satu" src="./gambar/phone1.png" alt="">
-                    <img class="img" src="./gambar/phone2.png" alt="">
-                </div>
-                <div class="button">
-                    <a href="">Demo</a>
-                    <a target="_blank" href="https://github.com/yeremiaChris/rumahMakan">The code</a>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- awal jumbotron -->
+    <div class="jumbotron jumbotron-fluid d-flex align-items-center ">
+        <div class="container mb-5 text-center wrapper">    
+            <div class="row">
+                <div class="col">
+                    <div class="container-gambar d-flex justify-content-center">
+                        <div class="gambar rounded-circle border border-white"></div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <h3>Online Shop</h3>
-                    </li>
-                    <p class="keterangan">Built with react native,Nodejs as backend and mongodb as DBMS, this project is not finished yet, im still doing this project.This app can Managing merchandise, display cart that contains total amount and the goods which is ordered </p>
-                </ul>
-                <div class="toolsImage">
-                    <img class="pc" src="./gambar/pc1.png" alt="">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-4"><strong> YEREMIA CHRIS SARAGI</strong></h1>
+                    <p class="lead">Web and Mobile Dev</p>
                 </div>
-                <div class="button">
-                    <a href="">Demo</a>
-                    <a target="_blank" href="https://github.com/yeremiaChris/tokoOnline">The code</a>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="wrapIcon d-flex justify-content-around w-25">
+                        <i class="bi bi-github"></i>    
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
                 </div>
             </div>
             
         </div>
     </div>
+    <!-- akhir jumbotron -->
+
+    <!-- section satu -->
+    <section id="profile">
+        <div class="container">
+            <div class="row ">
+                <div class="col text-center">
+                    <strong><p class="mt-5">ABOUT</p></strong>
+                    <hr class="garis w-75 mb-4">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col  text-center d-flex justify-content-center">
+                    <p class="w-75">Hello, i'm Yeremia Chris Saragi, just call me Jeremia. i like programming and i like to learn new think. My hoby is playing music and listen to music.</p>
+                </div>
+            </div>
+            <div class="row" id="tools">
+                <div class="col text-center">
+                    <strong><p class="mt-5">TOOLS</p></strong>
+                    <hr class="garis w-75 mb-4">
+                </div>
+            </div>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-6 ">
+                    <a target="_blank" href="https://reactjs.org/" class="btn mb-4 border border-dark btn-light btn-lg btn-block">ReactJs</a>
+                    <a target="_blank" href="https://reactnative.dev/" class="btn mb-4 border border-dark btn-light btn-lg btn-block">React Native</a>
+                    <a target="_blank" href="https://nextjs.org/" class="btn mb-4 border border-dark btn-light btn-lg btn-block">NextJs</a>
+                    <a target="_blank" href="https://nodejs.org/en/" class="btn mb-4 border border-dark btn-light btn-lg btn-block">NodeJs</a>
+                    
+                </div>
+                <div class="col-6 ">
+                    <a target="_blank" href="https://firebase.google.com/?gclid=Cj0KCQiA-aGCBhCwARIsAHDl5x9yZy8ff1rWSV6fNa4kQzyUSkiZpyYlm36AQ-6lVMdPFYGqBSh4v3UaAgquEALw_wcB&gclsrc=aw.ds" class="btn mb-4 btn-light border border-dark btn-lg btn-block">Firebase</a>
+                    <a target="_blank" href="https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_apac_indonesia_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624350&gclid=Cj0KCQiA-aGCBhCwARIsAHDl5x9wB9OB0PUZ_7_-gs3QezyLArzqYgeMBisew5W-YWSRaqWQIKXHyysaAncAEALw_wcB" class="btn mb-4 btn-light border border-dark btn-lg btn-block">Mongodb</a>
+                    <a target="_blank" href="https://www.mysql.com/" class="btn mb-4 btn-light border border-dark btn-lg btn-block">MySql</a>
+                    <a target="_blank" href="https://laravel.com/" class="btn mb-4 border border-dark btn-light btn-lg btn-block">Laravel</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhri section satu -->
+
+    <!-- section dua -->
+    <section class="sectionDua" id="project">
+        <div class="container">
+            <div class="row">
+            <div class="col text-center">
+                <strong>
+                    <p class="mt-5">PROJECTS</p>
+                </strong>
+                <hr class="garis w-75 mb-4">
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir section 2 -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+
+
+
+    <script src="./script.js"></script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
 </body>
+
 </html>
