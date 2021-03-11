@@ -44,7 +44,6 @@ i:hover {
   padding: 10px;
   cursor: pointer;
   transition: 0.8s;
-  height: 200px;
 }
 .kotak:hover {
   transform: scale(1.1);
