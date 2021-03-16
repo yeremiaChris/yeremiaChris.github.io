@@ -67,6 +67,7 @@ section {
 }
 .kotak:hover {
   transform: scale(1.1);
+  text-shadow: 1px 1px black;
 }
 .dalamKotak {
   display: flex;
@@ -162,7 +163,7 @@ section {
   height: 150px;
   left: -30px;
   overflow: hidden;
-  opacity: 0.5;
+  opacity: 0.3;
   bottom: 5px;
   transform: rotate(20deg);
 }
@@ -170,7 +171,7 @@ section {
   position: absolute;
   height: 150px;
   overflow: hidden;
-  opacity: 0.5;
+  opacity: 0.3;
   bottom: 5px;
   left: -100px;
   transform: rotate(-20deg);
