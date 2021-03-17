@@ -64,6 +64,7 @@ section {
   transition: 0.8s;
   overflow: hidden;
   position: relative;
+  margin-bottom: 15px;
 }
 .kotak:hover {
   transform: scale(1.1);
