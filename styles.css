@@ -34,7 +34,6 @@ body {
 }
 
 section {
-  height: 100vh;
   padding-top: 20px;
 }
 .garis {
@@ -51,6 +50,9 @@ section {
 }
 .wrapIcon a:hover {
   transform: scale(1.5);
+}
+.wrapIcon {
+  width: 200px;
 }
 
 #tools {
