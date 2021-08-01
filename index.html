@@ -1,224 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Fjalla+One&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-
-    <link rel="stylesheet" href="styles.css">
-
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./tailwind.css" rel="stylesheet" />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
     <title>Portofolio</title>
-</head>
-
-<body>
-
-    <!-- navbar -->
-    <nav  class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow-sm p-2">
-        <div id="home" class="container">
-            <a class="navbar-brand" href="#home">MyPortofolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbarLink navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav ">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#profile">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tools">Tools </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#project">Project</a>
-                    </li>
-                </ul>
-            </div>
+  </head>
+  <body>
+    <div class="mb-24">
+      <div class="m-auto" style="width: 1080px">
+        <!-- tabbar -->
+        <div class="flex items-center justify-between pt-6">
+          <h1 class="text-lg font-semibold">Portofolio</h1>
+          <ul class="flex gap-6">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+          </ul>
         </div>
-    </nav>
-    <!-- akhir navbar -->
 
-    <!-- awal jumbotron -->
-    <div class="jumbotron jumbotron-fluid d-flex align-items-center ">
-        <div class="container mb-5 text-center wrapper">    
-            <div class="row ">
-                <div class="col">
-                    <div class="container-gambar d-flex justify-content-center">
-                        <div class="gambar rounded-circle border border-white"></div>
-                    </div>
-                </div>
+        <!-- content -->
+        <div class="mt-16 flex justify-between items-center">
+          <div>
+            <h1 class="text-2xl font-bold mb-3">Hello,</h1>
+            <h1 class="text-2xl font-bold mb-3">I'm Yeremia Chris Saragi</h1>
+            <p class="mb-3">
+              I like to code because with coding I can create something that I
+              like
+            </p>
+            <div class="w-6 h-6">
+              <a href="">
+                <img src="./assets/img/github.png" alt="" />
+              </a>
             </div>
-            <div class="row">
-                <div class="col">
-                    <h1 class="display-4"><strong>Yeremia Chris Saragi</strong></h1>
-                    <p class="lead">Web and Mobile Dev</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <div class="wrapIcon d-flex justify-content-between ">
-                        <a target="_blank" href="https://github.com/yeremiaChris/"><i class="bi bi-github"></i></a>     
-                        <a target="_blank" href="https://www.facebook.com/yeremiaawesome/"><i class="bi bi-facebook"></i></a>
-                        <a target="_blank" href="https://wa.me/6281388110474"><i class="bi bi-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            
+          </div>
+          <img src="./assets/img/aku.png" alt="" />
         </div>
+        <h1 class="font-bold text-center mt-6">PROJECT</h1>
+        <div class="grid grid-cols-2 px-28 mt-6">
+          <div>
+            <p class="font-semibold mb-2">2021</p>
+            <h1>MAMI (Manulife Asset Manajemen Indonesia)</h1>
+          </div>
+          <div
+            class="bg-cover shadow-lg"
+            style="
+              background-image: url('./assets/img/mami.png');
+              height: 430px;
+            "
+          ></div>
+        </div>
+      </div>
     </div>
-    <!-- akhir jumbotron -->
-
-    <!-- section satu -->
-    <section id="profile">
-        <div class="container">
-            
-            <div class="row mt-5">
-                <div class="col text-center">
-                    <strong><p >ABOUT</p></strong>
-                    <hr class="garis w-75 mb-4">
-                </div>
-            </div>
-            <div class="row ">
-                <div class="col  text-center d-flex justify-content-center">
-                    <p class="w-75">Hello, I'm Yeremia Chris Saragi, just call me Jeremia. I like programming and i like to learn new thing. My hobby is playing music and listen to music.</p>
-                </div>
-            </div>
-            <div class="row" id="tools">
-                <div class="col text-center">
-                    <strong><p class="mt-5">MY TOOLS</p></strong>
-                    <hr class="garis w-75 mb-4">
-                </div>
-            </div>
-            <div class="row mt-4 justify-content-center">
-                <div class="col-6 ">
-                    <a target="_blank" href="https://reactjs.org/" class="btn mb-4 border border-dark btn-light btn-lg btn-block">ReactJs</a>
-                    <a target="_blank" href="https://reactnative.dev/" class="btn mb-4 border border-dark btn-light btn-lg btn-block">React Native</a>
-                    <a target="_blank" href="https://nextjs.org/" class="btn mb-4 border border-dark btn-light btn-lg btn-block">NextJs</a>
-                    <a target="_blank" href="https://nodejs.org/en/" class="btn mb-4 border border-dark btn-light btn-lg btn-block">NodeJs</a>
-                    
-                </div>
-                <div class="col-6 ">
-                    <a target="_blank" href="https://firebase.google.com/?gclid=Cj0KCQiA-aGCBhCwARIsAHDl5x9yZy8ff1rWSV6fNa4kQzyUSkiZpyYlm36AQ-6lVMdPFYGqBSh4v3UaAgquEALw_wcB&gclsrc=aw.ds" class="btn mb-4 btn-light border border-dark btn-lg btn-block">Firebase</a>
-                    <a target="_blank" href="https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_apac_indonesia_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624350&gclid=Cj0KCQiA-aGCBhCwARIsAHDl5x9wB9OB0PUZ_7_-gs3QezyLArzqYgeMBisew5W-YWSRaqWQIKXHyysaAncAEALw_wcB" class="btn mb-4 btn-light border border-dark btn-lg btn-block">Mongodb</a>
-                    <a target="_blank" href="https://www.mysql.com/" class="btn mb-4 btn-light border border-dark btn-lg btn-block">MySql</a>
-                    <a target="_blank" href="https://laravel.com/" class="btn mb-4 border border-dark btn-light btn-lg btn-block">Laravel</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- akhri section satu -->
-
-    <!-- section dua -->
-    <section class="sectionDua" id="project">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <strong>
-                        <p class="mt-5">PROJECTS</p>
-                    </strong>
-                    <hr class="garis w-75 mb-4">
-                </div>
-            </div>
-            <div class="row ">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
-                    <div class="kotak satu">
-                        <img src="./gambar/jualDua.jpeg" class="gambarProjectSatu-1" alt="">
-                       <img src="./gambar/jual1.jpeg" class="gambarProjectSatu"  alt="">
-                       
-                       <div class="dalamKotak">
-                           <div style="display: flex; align-items: center;">
-                               <div class="logo"></div>
-                               <h2><strong> Restaurant app</strong></h2>
-                           </div>                           
-                           <div style="display: flex; align-items: center;">
-                               <div class="logo tiga"></div>
-                           </div>                           
-                       </div>
-                       <div class="keterangan">
-                           <p>This app is built with React Native and Firebase as DBMS. Managing billing system and display income report monthly, weekly and yearly.</p> 
-                           
-                       </div>
-                        <a class="btn btn-light" href="https://github.com/yeremiaChris/inventoryapp" target="_blank">Demo</a>
-                   </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
-                   <div class="kotak satu">
-                    <img src="./gambar/inven1.png" class="gambarProjectDua-1" alt="">
-                    <img src="./gambar/inven2.png" class="gambarProjectDua" alt="">
-                    <div class="dalamKotak">
-                        <div style="display: flex; align-items: center;">
-                            <div class="logo dua"></div>
-                            <h2><strong> Inventory app</strong></h2>
-                        </div>
-                        <div style="display: flex; align-items: center;">
-                            <div class="logo tiga"></div>
-                        </div>
-                    </div>
-                       <div class="keterangan">
-                           <p>This app is built with Next JS, this projects is not finished yet. I'm still doing this project. Managing stock, buying and selling system, display sales report and purchase report.</p>
-                       </div>
-                       <a class="btn btn-light" href="https://github.com/yeremiaChris/rumahMakan" target="_blank">Demo</a>
-                   </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
-                    <div class="kotak satu">
-                        <img src="./gambar/online1.png" class="gambarProjectTiga-1" alt="">
-                        <img src="./gambar/online2.png" class="gambarProjectTiga" alt="">
-                        <div class="dalamKotak">
-                            <div style="display: flex; align-items: center;">
-                                <div class="logo"></div>
-                                <h2><strong> Online shop</strong></h2>
-                            </div>
-                            <div style="display: flex; align-items: center;">
-                                <div class="logo mongo"></div>
-                                <div class="logo node"></div>
-                            </div>
-                        </div>
-                        <div class="keterangan">
-                            <p>This app is built with React Js, Node Js as backend and Mongodb for the DBMS. Display cart for customer, managing stock and selling system. This project is not finished yet. I'm still doing this project </p>
-                        </div>
-                        <a class="btn btn-light" href="https://github.com/yeremiaChris/tokoOnline" target="_blank">Demo</a>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- akhir section 2 -->
-    <!-- Optional JavaScript; choose one of the two! -->
-
-
-
-
-    <script src="./script.js"></script>
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    -->
-</body>
-
+  </body>
 </html>
