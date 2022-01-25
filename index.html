@@ -10,46 +10,87 @@
   </head>
   <body>
     <div class="mb-24">
-      <div class="m-auto" style="width: 1080px">
+      <div class="m-auto w-full md:w-[1080px]">
         <!-- tabbar -->
-        <div class="flex items-center justify-between pt-6">
-          <h1 class="text-lg font-semibold">Portofolio</h1>
-          <ul class="flex gap-6">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Project</a></li>
-          </ul>
-        </div>
+        <h1 class="text-lg hidden md:block mt-4 font-semibold">Portofolio</h1>
 
-        <!-- content -->
-        <div class="mt-16 flex justify-between items-center">
-          <div>
+        <!-- header -->
+        <div class="mt-16 mx-auto w-full grid justify-center px-10 md:px-0 md:flex md:justify-between items-center">
+          <img class="md:hidden" src="./assets/img/aku.png" alt="" />
+          <div class="mt-4">
             <h1 class="text-2xl font-bold mb-3">Hello,</h1>
             <h1 class="text-2xl font-bold mb-3">I'm Yeremia Chris Saragi</h1>
-            <p class="mb-3">
-              I like to code because with coding I can create something that I
-              like
-            </p>
-            <div class="w-6 h-6">
-              <a href="">
-                <img src="./assets/img/github.png" alt="" />
-              </a>
+            <p class="mb-3">I like to code because with coding I can create something that I like</p>
+            <a class="w-6 h-6 inline-block" href="https://www.instagram.com/yeremiachris3/" target="_blank">
+              <img src="./assets/img/ig.png" alt="ig" />
+            </a>
+            <a class="w-6 h-6 inline-block" href="https://github.com/yeremiaChris/" target="_blank">
+              <img src="./assets/img/github.png" alt="github" />
+            </a>
+          </div>
+          <img class="hidden md:block" src="./assets/img/aku.png" alt="picture" />
+        </div>
+
+        <h1 class="font-bold text-center my-6 md:my-12">RECENT WORKS</h1>
+
+        <!-- project 1 -->
+        <div class="grid gap-8 md:gap-x-12 md:grid-cols-2 px-10 md:px-28">
+          <img class="md:hidden w-full" src="/assets/img/mami.png" alt="mami" />
+          <div class="grid gap-8">
+            <div>
+              <!-- <p class="font-semibold mb-2">2021</p> -->
+              <h1 class="font-semibold mb-2">MAMI (Manulife Asset Manajemen Indonesia) Mutual Funds Site + CMS</h1>
+              <p class="text-justify">A website that provides information on various investment products from Manulife Investment Management uses Vue JS and Nuxt JS to handle SEO and simplify routing, and Tailwind CSS as the CSS framework.</p>
+            </div>
+            <div class="flex items-end gap-2">
+              <img class="w-6 h-6" src="/assets/img/vue.png" alt="vue" />
+              <img class="w-6 h-6" src="/assets/img/nuxt.png" alt="nuxt" />
+              <img class="w-6 h-6" src="/assets/img/tailwind.png" alt="tailwind" />
             </div>
           </div>
-          <img src="./assets/img/aku.png" alt="" />
+          <img class="hidden md:block" src="/assets/img/mami.png" alt="mami" />
         </div>
-        <h1 class="font-bold text-center mt-6">PROJECT</h1>
-        <div class="grid grid-cols-2 px-28 mt-6">
-          <div>
-            <p class="font-semibold mb-2">2021</p>
-            <h1>MAMI (Manulife Asset Manajemen Indonesia)</h1>
+
+        <!-- garis -->
+        <hr class="mx-10 md:px-0 my-12 md:my-24 border-2" />
+
+        <!-- project 2 -->
+        <div class="grid gap-8 md:gap-x-12 md:grid-cols-2 px-10 md:px-28">
+          <img class="md:hidden" src="/assets/img/fas.png" alt="fas" />
+          <div class="grid gap-8">
+            <div>
+              <!-- <p class="font-semibold mb-2">2021</p> -->
+              <h1 class="font-semibold mb-2">Social Media Scrapping Site</h1>
+              <p class="text-justify">Social media scraping site, I work as a part of the front-end team. Build with Nuxt JS and Tailwind CSS. This app shows informations like total followers, account growth and etc.</p>
+            </div>
+            <div class="flex items-end gap-2">
+              <img class="w-6 h-6" src="/assets/img/vue.png" alt="vue" />
+              <img class="w-6 h-6" src="/assets/img/nuxt.png" alt="nuxt" />
+              <img class="w-6 h-6" src="/assets/img/tailwind.png" alt="tailwind" />
+            </div>
           </div>
-          <div
-            class="bg-cover shadow-lg"
-            style="
-              background-image: url('./assets/img/mami.png');
-              height: 430px;
-            "
-          ></div>
+          <img class="hidden md:block" src="/assets/img/fas.png" alt="fas" />
+        </div>
+
+        <!-- garis -->
+        <hr class="mx-10 md:px-0 my-12 md:my-24 border-2" />
+
+        <!-- project 3 -->
+        <div class="grid gap-8 md:gap-x-12 md:grid-cols-2 px-10 md:px-28">
+          <img class="md:hidden" src="/assets/img/dashboard.png" alt="fas" />
+          <div class="grid gap-8">
+            <div>
+              <!-- <p class="font-semibold mb-2">2021</p> -->
+              <h1 class="font-semibold mb-2">BPPT Dashboard Site</h1>
+              <p class="text-justify">BPPT Dashboard Site, I work as front-end team. Build with Nuxt JS and Tailwind CSS. This app shows informations about a list of university, lecturer, faculty etc.</p>
+            </div>
+            <div class="flex items-end gap-2">
+              <img class="w-6 h-6" src="/assets/img/vue.png" alt="vue" />
+              <img class="w-6 h-6" src="/assets/img/nuxt.png" alt="nuxt" />
+              <img class="w-6 h-6" src="/assets/img/tailwind.png" alt="tailwind" />
+            </div>
+          </div>
+          <img class="hidden md:block" src="/assets/img/dashboard.png" alt="fas" />
         </div>
       </div>
     </div>
